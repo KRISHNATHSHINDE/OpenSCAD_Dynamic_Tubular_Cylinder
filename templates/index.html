@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate STL File</title>
+    <!-- Link to CSS file inside the static folder -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Generate Tubular Cylinder</h1>
+      <form action="/generate" method="post">
+        <label for="outer_d">Outer Diameter:</label><br />
+        <input
+          type="number"
+          id="outer_d"
+          name="outer_d"
+          step="any"
+          required
+        /><br /><br />
+        <label for="inner_d">Inner Diameter:</label><br />
+        <input
+          type="number"
+          id="inner_d"
+          name="inner_d"
+          step="any"
+          required
+        /><br /><br />
+        <label for="length">Length:</label><br />
+        <input
+          type="number"
+          id="length"
+          name="length"
+          step="any"
+          required
+        /><br /><br />
+        <label for="max_holes">Max Holes:</label><br />
+        <input
+          type="number"
+          id="max_holes"
+          name="max_holes"
+          required
+        /><br /><br />
+        <input type="submit" value="Generate STL" />
+      </form>
+      <footer>Note: Ensure all measurements are in millimeters.</footer>
+    </div>
+  </body>
+</html>

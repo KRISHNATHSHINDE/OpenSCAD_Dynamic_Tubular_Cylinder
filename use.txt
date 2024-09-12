@@ -1,0 +1,7 @@
+Run these commands in bash:
+pip install numpy numpy-stl
+sudo apt update
+sudo apt install openscad
+
+To start the app:
+python main.py

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Download Files</title>
+  </head>
+  <body>
+    <h1>Files Generated</h1>
+    <p>
+      <a href="/download/{{ stl_file }}" class="button">Download STL File</a>
+      <a href="/download/{{ scad_file }}" class="button">Download SCAD File</a>
+    </p>
+    <p>
+      <a href="/view_stl" class="button">View STL File</a>
+    </p>
+
+    <style>
+      /* Basic Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      /* Main Body Styling */
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        /* Background image with subtle dark overlay */
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("static/images/back.jpg") no-repeat center center/cover;
+        color: #f0f0f0;
+      }
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        background-color: #28a745;
+        border-radius: 5px;
+      }
+      .button:hover {
+        background-color: #218838;
+        transform: translateY(-2px);
+      }
+    </style>
+  </body>
+</html>
